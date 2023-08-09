@@ -31,7 +31,7 @@ app.post('/readData', function(req, res){
 
 app.post('/inputAJAX', function(req, res){
     console.log(req.body);
-    res.send(req.body);
+    res.send("get msg : " + req.body.value1);
     data = req.body.value1;
 });
 
